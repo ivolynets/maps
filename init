@@ -1,0 +1,11 @@
+ENVIRONMENT_DIR="env"
+
+# Create the Python virtual environment
+pip3 install virtualenv
+virtualenv $ENVIRONMENT_DIR
+
+# Activate the Python virtual environment
+source $ENVIRONMENT_DIR/bin/activate
+
+# Install dependencies
+pip3 install jupyter jupyterlab tabulate wget pillow
